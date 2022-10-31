@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Piyush_Employee::manager" title="Feedback management" module="Piyush_Employee" sortOrder="10" resource="Piyush_Employee::manager"/>
+        <add id="Piyush_Employee::add_row" title="Feedback details" module="Piyush_Employee" sortOrder="20" parent="Piyush_Employee::manager" action="grid/grid" resource="Piyush_Employee::add_row"/>
+    </menu>
+</config>

@@ -1,0 +1,14 @@
+
+<form method="post" action="<?= $block->getPostUrl() ?>">
+<label class="label" for="Name"><span><?php  echo __('Name') ?></span></label>
+    <input name="Name" title="<?php  echo __('Name') ?>"  type="text" data-validate="{required:true}" required>
+    <label class="label" for="email"><span><?php  echo __('Email') ?></span></label>
+    <input name="Email" title="<?php  echo __('Email') ?>"  type="email" data-validate="{required:true, 'validate-email':true}" required>
+    <label class="label" for="Mobile"><span><?php  echo __('Mobile') ?></span></label>
+    <input name="Mobile" title="<?php  echo __('Mobile') ?>"  type="number" data-validate="{required:true}" required>
+    <label class="label" for="Feedback"><span><?php  echo __('Feedback') ?></span></label>
+    <input name="Feedback" title="<?php  echo __('Feedback') ?>"type="text" data-validate="{required:true}" required>
+    
+
+    <input type="submit" value="Submit Feedback">
+</form>

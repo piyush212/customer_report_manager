@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Piyush\Employee\Api\ReportRepositoryInterface" type="Piyush\Employee\Model\ReportRepository"/>
+   <preference for="Piyush\Employee\Api\Data\ReportInterface" type="Piyush\Employee\Model\Report"/>
+    <!-- <preference for="Piyush\Employee\Api\Data\Interface" type="Piyush\Employee\Model\Grid"/> -->
+   <virtualType name="Piyush\Employee\Model\ResourceModel\Report\Report\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+<arguments>
+<argument name="mainTable" xsi:type="string">feedback_data</argument>
+<argument name="resourceModel" xsi:type="string">Piyush\Employee\Model\ResourceModel\Report</argument>
+</arguments>
+</virtualType>
+<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+<arguments>
+<argument name="collections" xsi:type="array">
+<item name="grid_record_grid_list_data_source" xsi:type="string">Piyush\Employee\Model\ResourceModel\Report\Report\Collection</item>
+<item name="feedback_form_data_source" xsi:type="string">Piyush\Employee\Model\ResourceModel\Report\Report\Collection</item>
+</argument>
+</arguments>
+</type>
+</config>
+

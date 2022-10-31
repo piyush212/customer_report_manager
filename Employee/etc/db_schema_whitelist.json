@@ -1,0 +1,14 @@
+{
+    "feedback_data": {
+        "column": {
+            "Feedback_No": true,
+            "Name": true,
+            "Email": true,
+            "Mobile": true,
+            "Feedback": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
